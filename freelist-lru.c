@@ -117,7 +117,7 @@ typedef struct BufferAccessStrategyData
 }			BufferAccessStrategyData;
 
 
-/* modified */
+/* modified by Anton Lee */
 void StrategyUpdateAccessedBuffer(int buf_id, bool delete);
 
 /* Prototypes for internal functions */
@@ -208,7 +208,7 @@ have_free_buffer(void)
 		return false;
 }
 
-// modified
+// modified by Anton Lee
 // StrategyUpdateAccessedBuffer 
 // Called by bufmgr when a buffer page is accessed.
 // Adjusts the position of buffer (identified by buf_id) in the LRU stack if delete is false;
